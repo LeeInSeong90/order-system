@@ -33,9 +33,10 @@ public class OrderService {
             );
             int stockQuantity = storeProduct.getStockQuantity();
 
-            if(buyQuantity < stockQuantity){
+            if(buyQuantity > stockQuantity){
                 throw new RuntimeException("재고가 없습니다.");
             }
+
             storeProduct.adjustStockQuantity(buyQuantity);
             storeProducts.add(storeProduct);
         }

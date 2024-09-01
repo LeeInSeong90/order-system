@@ -22,4 +22,5 @@ public class Response<T> {
     public static <T> Response<T> fail(String errorMessage) {
         return new Response<>(HttpStatus.INTERNAL_SERVER_ERROR, errorMessage, null);
     }
+
 }

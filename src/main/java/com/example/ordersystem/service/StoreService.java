@@ -25,7 +25,7 @@ public class StoreService {
         return storeProductOptional.get();
     }
 
-    public void saveAll(List<StoreProduct> storeProduct) {
-        storeProductRepository.saveAll(storeProduct);
+    public void saveAll(List<StoreProduct> storeProducts) {
+        storeProductRepository.saveAll(storeProducts);
     }
 }
